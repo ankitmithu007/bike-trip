@@ -1,0 +1,114 @@
+<div id="tripCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li ng-repeat="slide in $ctrl.carouselItems" data-target="#tripCarousel" ng-class="{active:slide.active}"
+        data-slide-to="slide.id">
+    </li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div ng-repeat="slide in $ctrl.carouselItems" class="carousel-item" ng-class="{active:slide.active}">
+      <img class="d-block w-100" src="{{slide.imgPath}}" alt="{{slide.name}}"
+           ng-click="$ctrl.onCarouselClick(slide.name)">
+      <div class="carousel-caption d-none d-md-block">
+        <button type="button" class="btn btn-info">{{slide.metaData}}</button>
+      </div>
+
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#tripCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#tripCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<br><br>
+
+
+<div id="product">
+  <div class="card-deck">
+    <div class="card" ng-repeat="product in $ctrl.products">
+      <img class="card-img-top" src="{{product.imgPath}}" alt="{{product.name}}">
+      <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">
+        <ul>
+        <li ng-repeat="text in product.text">{{text.display}}</li>
+        </ul>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted" ng-bind-html="product.footer"></small>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="images/others/bbq1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Portable BBQ Grill Maker</h5>
+        <p class="card-text">
+        <ul>
+          <li>Material: Metal</li>
+          <li>Type : BBQ Grill tool</li>
+          <li>Adjustable temperature</li>
+          <li>Friendly environment</li>
+
+        </ul>
+        </p>
+
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">&#x20B9 300/day</small>
+      </div>
+    </div>
+    <div class="card">
+
+      <img class="card-img-top" src="images/others/gopro.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Portable BBQ Grill Maker</h5>
+        <p class="card-text">
+        <ul>
+          <li>Built-in touchscreen</li>
+          <li>Waterproof without a case</li>
+          <li>Great mobile apps</li>
+
+        </ul>
+        </p>
+
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">&#x20B9 300/day</small>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img class="card-img-top" src="images/others/bag.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Inlander 70 Ltrs Teal Blue Rucksack</h5>
+        <p class="card-text">
+        <ul>
+          <li>Outer Material: Polyester, Color: Teal Blue</li>
+          <li>Water resistant</li>
+          <li>Capacity: 70 liters; Weight: 1501.3 grams; Dimensions: 69.01 cms x 27.99 cms x 24.00 cms (LxWxH)</li>
+
+
+        </ul>
+        </p>
+
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">&#x20B9 300/day</small>
+      </div>
+    </div>
+
+
+  </div>
+</div>

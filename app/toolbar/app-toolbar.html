@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Bike Trips</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" ng-click="$ctrl.onNavbarClick($ctrl.enumNavBarItem.home.id)">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" ng-click="$ctrl.onNavbarClick($ctrl.enumNavBarItem.product.id)">Products</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" ng-click="$ctrl.onNavbarClick($ctrl.enumNavBarItem.aboutUs.id)">About Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" ng-click="$ctrl.onNavbarClick($ctrl.enumNavBarItem.contactUs.id)">Contact Us</a>
+        </li>
+      </ul>
+
+      <i class="fas fa-shopping-cart" style="color: green;font-size: x-large"></i>
+    </form>
+  </div>
+</nav>
+

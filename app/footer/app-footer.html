@@ -1,0 +1,109 @@
+<br><br>
+
+<div id="aboutUs">
+  <div class="jumbotron">
+    <div class="font-style">Meet Our Riders</div>
+    <div class="row align-items-center">
+
+      <div class=" col-12 col-md-4  box">
+        <img class="card-img-top circular-image " src="images/about/ankit.jpg" alt="About us">
+        <div class="about-us-name"><b>Ankit <br>NIT, Nagpur</b></div>
+      </div>
+      <div class=" col-12 col-md-4 box">
+        <img class="card-img-top circular-image" src="images/about/ajinkya.jpg" alt="About us">
+        <div class="about-us-name"><b>Ajinkya <br> NIT, Nagpur</b></div>
+
+      </div>
+      <div class=" col-12 col-md-4 box">
+        <img class="card-img-top circular-image" src="images/about/rounak.jpg" alt="About us">
+        <div class="about-us-name"><b>Rounak <br>NIT, Nagpur</b></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="contactUs">
+  <div class="jumbotron">
+
+    <div class="font-style">Contact Us</div>
+    <div style="padding-left: inherit">
+      <div class="row">
+        <span class="fas fa-map-marker-alt icon-size" style="color: #f0c24b!important"></span>&nbsp;&nbsp;
+        <span> SVR Sreenivasam Apartment, Invoies street, Patrika Nagar, Madhapur</span>
+      </div>
+      <br>
+
+
+      <div class="row">
+        <i class="fas fa-phone icon-size" style="color: #84bed6!important"></i>&nbsp;&nbsp;
+        <span> 8142268171 / 9820815402 </span>
+      </div>
+      <br>
+
+      <div class="row">
+        <i class="fas fa-envelope icon-size" style="color: #b5d56a!important"></i>&nbsp;&nbsp;
+        <span> planBikeTrip@gmail.com</span>
+      </div>
+      <br>
+    </div>
+
+
+    <div class="row ">
+      <div class=" col-md-6 col-sm-12  box" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7858095431507!2d78.37239691567078!3d17.4220637880578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93f8722f8c33%3A0x6cd17cd26a48e99e!2sFactSet+Systems+India+Private+Limited%2C+DivyaSree+Orion!5e0!3m2!1sen!2sin!4v1532245937620"
+                height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </div>
+
+      <div class=" col-md-6 col-sm-12 box">
+        <form class="query-validation">
+          <div class="form-row">
+            <div class="col-6">
+              <input type="text" class="form-control" placeholder="Name" ng-model="$ctrl.queryMessage.name.data">
+
+              <div class="invalid-feedback" ng-if="$ctrl.queryMessage.name.valid">
+                Invalid input!
+              </div>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" placeholder="City" ng-model="$ctrl.queryMessage.city.data">
+              <div class="invalid-feedback" ng-if="!$ctrl.queryMessage.city.valid">
+                Invalid input!
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="form-row">
+            <div class="col-6">
+              <input type="text" class="form-control" placeholder="Email" ng-model="$ctrl.queryMessage.email.data">
+              <div class="invalid-feedback" ng-if="!$ctrl.queryMessage.email.valid">
+                Invalid input!
+              </div>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" placeholder="Mobile" ng-model="$ctrl.queryMessage.mobile.data">
+              <div class="invalid-feedback" ng-if="!$ctrl.queryMessage.mobile.valid">
+                Invalid input!
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="form-row">
+            <textarea class="form-control" rows="10" placeholder="Your Query" ng-model="$ctrl.queryMessage.message.data">
+            </textarea>
+            <div class="invalid-feedback" ng-if="!$ctrl.queryMessage.message.valid">
+              Don't misuse Freedom of speech
+            </div>
+          </div>
+          <br>
+          <button class="btn" type="submit" ng-click="$ctrl.onSendMessage()">Send Message</button>
+
+        </form>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
